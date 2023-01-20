@@ -16,6 +16,8 @@
 
 Наглядно c функционалом проекта можно познакомиться в [видео]().
 
+<img width="1489" alt="special-type" src="https://user-images.githubusercontent.com/96244317/213692929-0a28ce1c-0330-4d09-91ef-88135c601273.png">
+
 ## Команда проекта
 
 [Марина Коваленко]() - Project-manager
