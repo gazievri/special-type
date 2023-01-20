@@ -1,0 +1,61 @@
+@import "../../styles/@global.sass"
+@import "../../styles/@mixins.sass"
+
+.notFound
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: 0 20px
+
+.notFound__button
+  background-color: transparent
+  border: none
+  text-align: center
+  color: rgba(243, 66, 71, 1)
+  cursor: pointer
+  @include heading-h3
+
+.notFound__img
+  width: 100%
+  padding-top: 17px
+
+.notFound__title
+  padding-top: 17px
+  @include heading-h1
+  padding-bottom: 115px
+
+.notFound__buttons
+  width: 40vw
+  justify-content: space-between
+  display: flex
+  padding-bottom: 143px
+  gap: 30px
+
+.notFound__button
+  width: 281px
+  height: 41px
+  border: 2px solid rgba(243, 66, 71, 1)
+  border-radius: 30px
+  @include textRegular-16
+
+.notFound__button:last-of-type
+  background-color: rgba(243, 66, 71, 1)
+  color: #fff
+
+@media screen and (max-width: 999px)
+  .notFound__title
+    @include heading-h2
+
+@media screen and (max-width: 560px)
+  .notFound__title
+    @include heading-h3
+    text-align: center
+    padding-bottom: 40px
+
+  .notFound__buttons
+     width: 60vw
+     padding-bottom: 43px
+
+  .notFound__button
+   @include textRegular-12

@@ -1,0 +1,63 @@
+@import "../../styles/@global.sass"
+@import "../../styles/@mixins.sass"
+
+.thanks
+    background-image: url('../../assets/images/ThanksDesktop.jpg')
+    min-width: 95vw
+    height: 70vh
+    position: relative
+    background-repeat: no-repeat
+    background-size: cover
+    overflow: hidden
+
+.thanks-cover
+    position: absolute
+    background: linear-gradient(273.65deg, rgba(251, 149, 149, 0.8) 38.65%, rgba(253, 216, 216, 0.4) 55.69%, rgba(255, 255, 255, 0) 73.09%)
+    top: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+.thanks-cover__text
+    padding-left: 50%
+    text-align: center
+
+.thanks-cover__title
+    @include heading-h1
+    color: #fff
+    padding-bottom: 17px
+
+.thanks-cover__desctiption
+    @include textBold-20
+    color: #fff
+
+@media screen and (max-width: 1000px)
+    .thanks
+        min-width: 100vw
+        background-image: url('../../assets/images/ThanksTablet.jpg')
+        height: 100vh
+    .thanks-cover
+        background: linear-gradient(360deg, rgba(251, 149, 149, 0.8) 30.09%, rgba(255, 202, 202, 0.8) 65.44%, rgba(255, 255, 255, 0) 100%)
+    .thanks-cover__text
+        padding: 0
+
+    .thanks-cover__title
+        color: #000000
+    .thanks-cover__desctiption
+        color: #000000
+
+@media screen and (max-width: 500px)
+    .thanks
+        background-image: url('../../assets/images/ThanksMobile.jpg')
+
+    .thanks-cover__text
+        width: 80%
+
+    .thanks-cover__title
+        font-size: 25px
+    .thanks-cover__desctiption
+        color: #000000
+        @include textRegular-16

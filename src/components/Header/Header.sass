@@ -1,0 +1,60 @@
+@import url(../../styles/@global.sass)
+
+.header
+  height: 101px
+  background: linear-gradient(180deg, rgba(251, 149, 149, 0.7) 0%, rgba(253, 216, 216, 0.7) 49.48%, rgba(255, 255, 255, 0.7) 85.94%)
+  display: flex
+  align-items: center
+  z-index: 11
+
+.header__info-block
+  margin: 0 auto 0
+  display: flex
+  width: 1200px
+  align-items: center
+  padding: 0 10px
+
+.header__logo
+  background-image: url('../../assets/images/header-logo.svg')
+  width: 77px
+  height: 77px
+
+.header__logo:hover
+  cursor: pointer
+
+.header__nav-menu
+  display: flex
+  justify-content: space-between
+  margin: 0 0 0 auto
+  gap: 30px
+  align-items: center
+  font-weight: 600
+  font-size: 16px
+  line-height: 100%
+
+.header__nav-link
+  text-decoration: none
+
+.header__nav-link_active
+  color: red
+
+.header__nav-link:hover
+  cursor: pointer
+
+@media screen and (max-width: 999px)
+  .header__info-block
+    margin: 0 36px
+    padding: 0
+
+  .is-sticky
+    position: sticky
+    top: 0
+    background: linear-gradient(180deg, rgba(251, 149, 149, 1) 0%, rgba(253, 216, 216, 1) 49.48%, rgba(255, 255, 255, 0.5) 85.94%)
+
+  .header__nav-menu
+    gap: 16px
+
+  .header__logo
+    width: 60px
+    height: 60px
+    background-size: cover

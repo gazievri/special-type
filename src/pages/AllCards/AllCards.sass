@@ -1,0 +1,50 @@
+@import "../../styles/@global.sass"
+@import "../../styles/@mixins.sass"
+
+.allCards
+    width: 100%
+
+.allCards__content
+    justify-content: space-between
+    display: flex
+    flex-direction: row
+    max-width: 1020px
+    flex-wrap: wrap
+    padding-bottom: 79px
+    margin: 0 auto
+    row-gap: 92px
+    padding: 0 40px 0
+    margin-bottom: 60px
+
+.allCards__notFound
+    @include heading-h3
+    margin: 0 auto
+
+.allCards__bottom-button
+    display: flex
+    justify-content: center
+
+.allCards-card
+    max-width: 383px
+
+.allCards__title
+    margin: 0 auto
+    text-align: center
+    @include heading-h1
+    color: #FF3744
+    max-width: 600px
+
+.allCards__head
+    margin: 64px 0 74px
+    position: relative
+
+@media screen and (max-width: 999px)
+    .allCards__title
+        font-size: 30px
+        padding: 0 20px 64px
+
+@media screen and (max-width: 880px)
+    .allCards__content
+        padding: 0 10px 0
+        flex-direction: column
+        align-items: center

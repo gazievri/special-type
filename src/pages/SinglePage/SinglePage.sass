@@ -1,0 +1,72 @@
+@import "../../styles/@global.sass"
+@import "../../styles/@mixins.sass"
+
+.singlePage
+  margin: 20px auto 0
+  display: flex
+  row-gap: 67px
+  width: 100%
+  position: relative
+  padding-bottom: 128px
+
+.singlePage__block
+  display: flex
+  justify-content: space-between
+  width: 100%
+  padding: 67px 56px 0
+
+.singlePage__text-block
+  display: flex
+  flex-direction: column
+  max-width: 60%
+
+.singlePage__date
+  margin: 0
+  font-weight: 400
+  font-size: 16px
+  line-height: 120.5%
+
+.singlePage__text
+  @include textRegular-20
+
+.singlePage__user
+  @include heading-h3
+  margin: 14px 0 32px
+  color: #FF3744
+  max-width: 715px
+  overflow: hidden
+  // white-space: nowrap
+  text-overflow: ellipsis
+
+.singlePage__image-container
+  cursor: pointer
+
+.singlePage__card-img
+  width: 100%
+  clip-path: url(#review-mask)
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+@media screen and (max-width: 999px)
+  .singlePage__text
+    @include textRegular-16
+  .singlePage__user
+
+@media screen and (max-width: 830px)
+  .singlePage
+    padding-bottom: 110px
+  .singlePage__block
+    align-items: center
+    flex-direction: column-reverse
+    padding: 56px 32px 0
+
+  .singlePage__text-block
+    max-width: 100%
+
+  .singlePage__text
+    padding: 40px 0 0
+
+@media screen and (max-width: 500px)
+  .singlePage__text
+    @include textRegular-14

@@ -1,0 +1,14 @@
+@import "../../styles/@global.sass"
+@import "../../styles/@mixins.sass"
+
+.navigation__container
+  display: flex
+  gap: 64px
+
+
+
+@media screen and (max-width: 999px)
+    .navigation__container
+      display: flex
+      flex-direction: column
+      @include textBold-20

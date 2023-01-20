@@ -1,0 +1,66 @@
+.slider
+  margin-top: 90px
+  display: flex
+  align-items: center
+  gap: 10vw
+
+.slider__prev-img-btn
+  background-image: url('../../assets/images/prev-img.svg')
+  background-size: 16px 35px
+  background-position: center
+  background-color: transparent
+  width: 16px
+  height: 35px
+  border: none
+  transition: 0.3s
+
+.slider__prev-img-btn:hover
+  cursor: pointer
+  opacity: 0.6
+
+.slider__next-img-btn
+  background-image: url('../../assets/images/next-img.svg')
+  background-size: 16px 35px
+  background-position: center
+  background-color: transparent
+  width: 16px
+  height: 35px
+  border: none
+  transition: 0.3s
+
+.slider__next-img-btn:hover
+  cursor: pointer
+  opacity: 0.6
+
+.slider-container
+  position: relative
+  width: 65vw
+  height: 65vh
+  box-sizing: border-box
+  display: flex
+  align-items: center
+  overflow: hidden
+  background: rgba(255, 255, 255, 1)
+  flex-shrink: 0
+
+.slider-img
+  position: absolute
+  width: 100%
+  height: 100%
+  transition: all .5s
+  object-fit: cover
+
+.slider-img-next
+  transform: translateX(1000px)
+
+.slider-img-prev
+  transform: translateX(-1000px)
+
+.slider__single-img
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+@media screen and (min-width: 1550px)
+  .slider__single-img
+    padding: 0 10%

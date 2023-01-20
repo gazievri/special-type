@@ -1,0 +1,172 @@
+.form-volunteering
+  display: flex
+  flex-direction: column
+  box-sizing: border-box
+  border: 1px solid #FF3744
+  border-radius: 30px
+  background: #F8F8F8
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1)
+  width: 700px
+  min-height: 753px
+  padding: 87px 70px 39px 70px
+
+.form-volunteering__title
+  margin: 0 0 20px
+  color: #FF3744
+  align-self: center
+  font-family: 'Arkhip'
+  font-style: normal
+  font-weight: 400
+  font-size: 24px
+  line-height: 100%
+
+.form-volunteering__subtitle
+  margin: 0 0 30px
+  color: #6F6F6F
+
+.form-volunteering__required-field
+  color: rgba(111, 111, 111, 1)
+  margin: 0 0 29px
+
+.form-volunteering__asterisk
+  color: #FF3744
+
+.form-volunteering__inputs-block
+  display: flex
+  column-gap: 70px
+  row-gap: 32px
+  width: 100%
+  flex-wrap: wrap
+
+.form-volunteering__input-lable
+  display: flex
+  flex-direction: column
+  row-gap: 7px
+  width: 243px
+
+.form-volunteering__input-lable:last-child
+  width: 555px
+
+.form-volunteering__input-field
+  background: #FFFFFF
+  border: none
+  border-radius: 10px
+  height: 37px
+  width: 100%
+  padding: 0 0 0 13px
+
+// Стилизация кастомизированного чекбокса
+.form-volunteering__agreement
+  position: relative
+  margin: 35px 0 62px
+  display: flex
+  align-items: flex-start
+
+.form-volunteering__agreement-checkbox
+  -webkit-appearance: none
+  appearance: none
+  position: absolute
+
+.form-volunteering__agreement-lable::before
+  margin: 0
+  background-size: 22px 22px
+  content: ""
+  width: 22px
+  height: 22px
+  display: block
+  border-radius: 6px
+  background-color: #E84848
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1
+
+.form-volunteering__agreement-lable:hover
+  cursor: pointer
+
+.form-volunteering__agreement-lable:after
+  content: ""
+  width: 22px
+  height: 22px
+  display: block
+  background-image: url(./checked.svg)
+  background-repeat: no-repeat
+  background-size: 14px 10px
+  background-position: center
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 2
+  opacity: 0
+
+.form-volunteering__agreement-lable
+  padding-left: 36px
+  max-width: 522px
+  color: rgba(111, 111, 111, 1)
+  font-size: 14px
+
+.form-volunteering__agreement-checkbox:checked + .form-volunteering__agreement-lable::after
+  opacity: 1
+// Закончена стилизация кастомизированного чекбокса
+
+.form-volunteering__agreement-link
+  text-decoration: none
+  color: rgba(255, 55, 68, 1)
+  transition: 0.3s
+
+.form-volunteering__agreement-link:hover
+  cursor: pointer
+
+.form-volunteering__button
+  background: rgba(255, 55, 68, 1)
+  border-radius: 30px
+  border: none
+  color: rgba(255, 255, 255, 1)
+  height: 38px
+  align-items: center
+  font-size: 16px
+  font-style: normal
+  cursor: pointer
+  width: 281px
+  align-self: center
+
+.form-volunteering__button_disabled
+  background: #6F6F6F
+
+.form-volunteering__button_active
+  background: rgba(211, 29, 41, 1)
+
+.form-volunteering__error-text
+  color: rgba(255, 55, 68, 1)
+  font-size: 12px
+
+.form-volunteering__end-text
+  margin: 17px 0 17px
+
+@media screen and (max-width: 745px)
+  .form-volunteering__title
+    text-align: center
+    font-family: 'Arkhip'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 100%
+
+  .form-volunteering
+    width: 100%
+
+  .form-volunteering__input-lable
+    width: 100%
+
+  .form-volunteering__input-lable:last-child
+    width: 100%
+
+@media screen and (max-width: 600px)
+  .form-volunteering
+    padding: 28px 17px 32px 17px
+
+  .form-volunteering__button
+    width: 100%
+
+  .form-volunteering__agreement
+    margin: 16px 0 14px

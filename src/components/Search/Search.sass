@@ -1,0 +1,67 @@
+@import "../../styles/@global.sass"
+@import "../../styles/@mixins.sass"
+
+.search
+  position: absolute
+  top: 0
+  right: 0
+  align-items: center
+  display: flex
+  margin: 0 20px
+
+.search__clear-button
+  -webkit-mask-image: url('../../assets/images/cancel-icon.svg')
+  width: 24px
+  height: 24px
+  border: none
+  background-color: transparent
+  border: none
+  margin: 0
+  cursor: pointer
+  background-color: #6F6F6F
+  position: absolute
+  top: 9px
+  right: 38px
+
+.search__button
+  position: absolute
+  right: 8px
+  background-image: url('../../assets/images/search-icon.svg')
+  width: 24px
+  height: 24px
+  background-color: transparent
+  border: none
+  margin: 0
+  cursor: pointer
+  z-index: 10
+
+.search__input
+  border: none
+  z-index: 0
+  background-color: transparent
+  height: 40px
+  padding-left: 10px
+  outline: none
+  max-width: 60%
+.search__form
+  border: 1px solid red
+  border-radius: 30px
+
+.search__form_type_hidden
+  display: none
+
+.search__button_type_hidden
+  top: 9px
+
+@media screen and (max-width: 880px)
+  .search
+    position: relative
+    width: 220px
+    margin: 20px auto 0
+
+  .search__input
+    max-width: 75%
+
+  .search__clear-button
+    top: 9px
+    right: 50px

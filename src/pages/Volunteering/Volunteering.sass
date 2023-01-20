@@ -1,0 +1,62 @@
+.volunteering
+  margin: 96px 0 128px
+
+.volunteering__container
+  display: flex
+  gap: 79px
+
+.volunteering__text-block
+  display: flex
+  flex-direction: column
+  gap: 44px
+  max-width: 277px
+  flex-shrink: 0
+
+.volunteering__text-container
+  display: flex
+  flex-direction: column
+  gap: 25px
+
+.volunteering__text
+  font-weight: 400
+  font-size: 16px
+  line-height: 120.5%
+
+.volunteering__img
+  width: 100%
+  height: 254px
+
+
+@media screen and (max-width: 1080px)
+  .volunteering__container
+    flex-direction: column
+    align-items: center
+    margin: 0 20px 0
+
+  .volunteering__text-block
+    flex-direction: row
+    max-width: 773px
+    gap: 30px
+    align-items: center
+
+@media screen and (max-width: 745px)
+  .volunteering
+    margin: 25px 0 114px
+
+  .volunteering__text-block
+    flex-direction: column
+    align-items: center
+
+  .volunteering__img
+    width: 255px
+    height: 234px
+
+  .volunteering__text-container
+    max-width: 70%
+
+  .volunteering__container
+    gap: 40px
+
+@media screen and (max-width: 600px)
+  .volunteering__text-container
+    max-width: 80%

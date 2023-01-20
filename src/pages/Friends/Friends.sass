@@ -1,0 +1,75 @@
+@import '../../styles/@global.sass'
+@import  '../../styles/@mixins.sass'
+@import '../../styles/@fonts.sass'
+
+.friends
+  display: flex
+  flex-direction: column
+  padding-bottom: 128px
+  width: 100%
+
+.friends__title
+  @include heading-h1
+  color: #FF3744
+  text-align: center
+  margin: 64px 0 39px
+
+.friends__list
+  list-style: none
+  display: flex
+  justify-content: space-between
+  padding: 0 40px
+
+.friends__method
+  background: #F8F8F8
+  border: 1px solid #FF3744
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1)
+  border-radius: 30px
+  padding: 40px 58px 50px
+  display: flex
+  flex-direction: column
+  align-items: center
+  cursor: pointer
+
+.friends__item-title
+  @include heading-h3
+  color: #FF3744
+  margin-bottom: 70px
+
+.friends__item-img
+  width: 393px
+
+@media screen and (max-width: 1150px)
+  .friends__item-img
+    width: 337px
+
+  .friends__item-title
+    margin-bottom: 59px
+
+  .friends__list
+    padding: 0 20px
+
+@media screen and (max-width: 980px)
+  .friends__item-img
+    width: 250px
+
+  .friends__method
+    padding: 20px 58px 50px
+
+@media screen and (max-width: 800px)
+  .friends__list
+    display: flex
+    flex-direction: column
+    padding: 0 40px
+
+@media screen and (max-width: 450px)
+  .friends__list
+    padding: 0 20px
+
+  .friends__item-title
+    margin-bottom: 15px
+  .friends__item-img
+    width: 181px
+
+  .friends__method
+    margin-bottom: 20px

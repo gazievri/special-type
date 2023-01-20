@@ -1,0 +1,127 @@
+@import "../../styles/@mixins.sass"
+
+.add-review
+  margin: 40px 0 125px
+  display: flex
+  flex-direction: column
+  position: relative
+  max-width: 1200px
+  min-width: 320px
+  width: 100%
+
+.add-review__form
+  margin: 0 auto 0
+  max-width: 588px
+  width: 100%
+  display: flex
+  flex-direction: column
+
+.add-review__title
+  margin: 64px 0 32px
+  text-align: center
+
+.add-review__form-block
+  max-width: 588px
+  width: 100%
+  border: 1px solid #FF3744
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1)
+  border-radius: 30px
+  background: #F8F8F8
+  align-self: center
+  box-sizing: border-box
+  padding: 44px 102px 63px
+  display: flex
+  flex-direction: column
+  gap: 23px
+
+.add-review__form-lable
+  display: flex
+  flex-direction: column
+  position: relative
+
+.add-review__input-name
+  background: #FFFFFF
+  border-radius: 15px
+  border: none
+  height: 37px
+  padding: 8px 0 10px 10px
+  margin-top: 8px
+
+.add-review__input-review
+  background: #FFFFFF
+  border-radius: 15px
+  border: none
+  min-height: 73px
+  min-width: 384px
+  resize: vertical
+  padding: 8px 0 10px 10px
+  margin-top: 8px
+
+.add-review__load
+  background: #FF3744
+  border-radius: 20px
+  width: 180px
+  height: 36px
+  border: none
+  color: #FFFFFF
+
+.add-review__load:hover
+  cursor: pointer
+
+.add-review__form-submit
+  width: 100%
+  width: 100%
+  height: 64px
+  background-color: #FF3744
+  border-radius: 20px
+  border: none
+  align-self: center
+  font-style: normal
+  font-weight: 600
+  font-size: 20px
+  line-height: 100%
+  color: #FFFFFF
+  margin-top: 64px
+
+.add-review__form-submit:hover
+  cursor: pointer
+
+.add-review__form-submit_disabled
+  background: #6F6F6F
+
+.add-review__error-text
+  color: rgba(255, 55, 68, 1)
+  font-size: 12px
+
+.add-review__error-text_hidden
+  visibility: hidden
+  font-size: 12px
+
+.add-review__symbols-counter
+  font-size: 12px
+  margin-left: auto
+
+.add-review__err-and-counter
+  display: flex
+
+.add-review__count
+  color: black
+
+.add-review__count_type_wrong
+  color: rgba(255, 55, 68, 1)
+
+@media screen and (max-width: 635px)
+  .add-review
+    margin: 0 0 110px
+  .add-review__title
+    @include textRegular-20
+    margin: 32px 0 30px
+  .add-review
+    padding: 0 20px 0
+    box-sizing: border-box
+  .add-review__form-block
+    padding: 32px 28px 40px
+  .add-review__input-review
+    min-width: 100%
+  .add-review__form-submit
+    height: 41px

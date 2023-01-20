@@ -1,0 +1,80 @@
+@import "../../styles/@global.sass"
+@import "../../styles/@mixins.sass"
+
+.main
+  display: flex
+  flex-direction: column
+  align-items: center
+  max-width: 1200px
+  min-width: 255px
+  width: 100%
+  margin: 0 auto
+
+.main__content
+  padding-bottom: 48px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  gap: 30px
+  width: 100%
+
+.main__section
+  padding: 0 20px
+  width: 100%
+.main__title
+  height: 72px
+  max-width: 1200px
+  background: radial-gradient(50% 50% at 50% 50%, rgba(251, 149, 149, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%)
+  margin: 0 auto 0
+  display: flex
+  gap: 88px
+  align-items: center
+  justify-content: center
+  @include heading-h1
+
+.serverError
+  width: 100%
+  max-width: 792px
+  margin: 0 auto
+  margin-top: 15%
+
+.serverError__container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: 0 20px
+  padding: 75px 0
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1)
+  border: 1px solid rgba(255, 55, 68, 1)
+  background: #F8F8F8
+  border-radius: 30px
+
+.serverError__logo
+  background-image: url('../../assets/images/footer-logo.svg')
+  width: 150px
+  height: 150px
+  border-radius: 15px
+  background-repeat: no-repeat
+  background-position: center
+  background-size: contain
+
+.serverError__text
+  padding-top: 27px
+  @include heading-h3
+
+@media screen and (max-width: 800px)
+  .main__content
+    padding-bottom: 0
+    margin-bottom: 57px
+    flex-direction: column
+    align-items: center
+    gap: 81px
+
+@media screen and (max-width: 600px)
+  .serverError__logo
+    width: 86px
+    height: 86px
+  .serverError__text
+    padding-top: 20px
+    @include textRegular-16

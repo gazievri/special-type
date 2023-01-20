@@ -1,0 +1,89 @@
+@import "../../styles/@global.sass"
+@import "../../styles/@mixins.sass"
+
+.about
+  max-width: 1200px
+  min-width: 255px
+  margin-top: 88px
+
+.about__content
+  gap: 65px
+  max-width: 1200px
+  min-width: 255px
+  width: 100%
+  display: flex
+  flex-direction: row
+
+.about__text-block
+  max-width: 484px
+  min-width: 255px
+  width: 100%
+
+.about__logo
+  width: 100%
+
+.about__title
+  @include heading-h1
+  font-family: 'arkhip'
+  font-weight: 400
+  margin-top: 41px
+
+.about__text
+  @include textRegular-20
+  margin: 16px 0 24px
+  max-width: 406px
+
+.about__img
+  width: 100%
+  height: 100%
+  margin-top: 42px
+  min-width: 255px
+  max-width: 650px
+
+.title-span
+  @include heading-h1
+  color: #FF3744
+
+.about__fond
+  padding-right: 25px
+
+@media screen and (max-width: 1250px)
+  .about
+    margin: 0 30px
+
+@media screen and (max-width: 1000px)
+  .about__title
+    margin-top: 44px
+    font-size: 32px
+
+  .title-span
+    font-size: 32px
+
+@media screen and (max-width: 800px)
+  .about
+    margin: 0 34px
+  .about__content
+    align-items: center
+    flex-direction: column
+
+  .title-span
+    font-size: 19px
+    line-height: 19px
+
+  .about__title
+    margin-top: 32px
+    font-size: 19px
+    line-height: 19px
+
+  .about__text
+    font-size: 16px
+
+  .about__button
+    margin-top: 46px
+    margin-bottom: 64px
+    width: 100%
+
+
+
+
+

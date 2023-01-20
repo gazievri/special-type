@@ -1,0 +1,105 @@
+@import '../../styles/@global.sass'
+@import  '../../styles/@mixins.sass'
+@import '../../styles/@fonts.sass'
+
+.pagination__nav
+  display: flex
+  justify-content: center
+  flex-direction: column
+  padding-top: 40px
+
+.pagination__page-conntainer
+  display: flex
+  justify-content: center
+  padding-bottom: 64px
+
+.pagination__pages-list
+  display: flex
+  list-style: none
+  padding-left: 39px
+  padding-right: 39px
+
+.pagination__pages-item:not(:last-child)
+  margin-right: 39px
+
+.pagination__pages
+  @include textRegular-16
+  background-color: white
+  color: #6F6F6F
+  cursor: pointer
+  text-decoration: none
+  border: none
+
+.pagination__pages_active
+  @include textSemiBold-16
+  background-color: white
+  color: red
+
+.pagination__pag-btn
+  cursor: pointer
+  position: relative
+  width: 10px
+  height: 15px
+  border: none
+  background-color: white
+
+.pagination__forward-btn:before
+  position: absolute
+  top: 4px
+  left: -4px
+  width: 12px
+  height: 12px
+  content: ""
+  border-bottom: 3px solid #FF3744
+  border-right: 3px solid #FF3744
+  transform: rotate(-45deg)
+
+.pagination__forward-btn_disabled:before
+  position: absolute
+  top: 4px
+  left: -4px
+  width: 12px
+  height: 12px
+  content: ""
+  border-bottom: 3px solid grey
+  border-right: 3px solid grey
+  transform: rotate(-45deg)
+
+.pagination__reverse-btn:before
+  position: absolute
+  top: 4px
+  left: 0
+  width: 12px
+  height: 12px
+  content: ""
+  border-top: 3px solid #FF3744
+  border-left: 3px solid #FF3744
+  transform: rotate(-45deg)
+
+.pagination__reverse-btn_disabled:before
+  position: absolute
+  top: 4px
+  left: 0
+  width: 12px
+  height: 12px
+  content: ""
+  border-top: 3px solid grey
+  border-left: 3px solid grey
+  transform: rotate(-45deg)
+
+@media screen and (max-width: 999px)
+  .pagination__nav
+    max-width: 80%
+    margin: 0 auto
+
+  .pagination__pages-item:not(:last-child)
+    margin-right: 15px
+
+  .pagination__pages
+    min-width: 50px
+
+  .pagination__pages-list
+    flex-wrap: wrap
+    justify-content: space-around
+
+

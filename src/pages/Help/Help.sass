@@ -1,0 +1,127 @@
+@import '../../styles/@global.sass'
+@import  '../../styles/@mixins.sass'
+@import '../../styles/@fonts.sass'
+
+.help
+  display: flex
+  flex-direction: column
+  padding-bottom: 128px
+  width: 100%
+
+.help__title
+  @include heading-h1
+  color: #FF3744
+  text-align: center
+  margin-bottom: 39px
+
+.help__intro-container
+  display: flex
+  justify-content: space-between
+  margin: 0 20px 64px
+
+.help__left-intro-container
+  align-self: center
+
+.help__left-intro-desqr
+  @include heading-h3
+  max-width: 619px
+
+.help__right-intro-container
+  display: flex
+  flex-direction: column
+  padding-top: 217px
+  background-image: url(../../assets/images/Twen.png)
+  background-repeat: no-repeat
+  background-position: center top
+
+.help__right-intro-quote
+  @include textBold-20
+  color: #FF3744
+  margin-bottom: 23px
+
+.help__right-intro-author
+  text-align: right
+  @include textRegular-20
+
+.help__list
+  list-style: none
+  display: flex
+  max-width: 1200px
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  margin: 0 20px
+
+.help__method
+  background: #F8F8F8
+  border: 1px solid #FF3744
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1)
+  border-radius: 30px
+  padding: 65px 60px
+  display: flex
+  flex-direction: column
+  align-items: center
+  max-width: 588px
+  width: 100%
+
+.help__item-title
+  @include heading-h3
+  color: #FF3744
+  margin-bottom: 32px
+
+.help__item-descr
+  @include textRegular-20
+  text-align: center
+  margin-bottom: 25px
+
+.help__item-img
+  margin-bottom: 47px
+
+@media screen and (max-width: 1300px)
+  .help
+    padding-bottom: 87px
+
+  .help__right-intro-container
+    width: 377px
+
+  .help__right-intro-quote
+    width: 377px
+  .help__intro-container
+    margin: 0 48px 163px
+  .help__list
+    width: 95%
+    flex-direction: column
+
+  .help__method:first-child
+    margin-bottom: 140px
+
+@media screen and (max-width: 820px)
+  .help__title
+    font-size: 18px
+  .help__intro-container
+    flex-direction: column-reverse
+    justify-content: center
+    align-items: center
+    margin-bottom: 100px
+
+  .help__right-intro-container
+    width: 260px
+
+  .help__right-intro-quote
+    width: 260px
+  .help__right-intro-container
+    margin-bottom: 62px
+
+  .help__method
+    margin: 0 33px
+
+  .help__item-img
+    max-width: 228px
+
+  .help__item-title
+    font-size: 16px
+  .help__item-descr
+    font-size: 16px
+@media screen and (max-width: 600px)
+  .help__list
+    margin: 0 auto

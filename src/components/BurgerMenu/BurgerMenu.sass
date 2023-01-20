@@ -1,0 +1,36 @@
+.BurgerButton
+  width: 30px
+  height: 30px
+  background-repeat: no-repeat
+  background-color: transparent
+  border: none
+  cursor: pointer
+  background-image: url('../../assets/images/burgerButton.svg')
+  margin-right: 43px
+  margin-top: 8px
+
+.burger
+  position: absolute
+  top: -500px
+  display: none
+
+.burger_opened
+  display: flex
+  top: 83px
+  right: 0
+  left: 0
+  bottom: 0
+
+.burger__container
+  background-color: #fff
+  width: 100vw
+  height: 100vh
+  position: relative
+  display: flex
+  justify-content: center
+  padding-top: 70px
+
+
+@media screen and (max-width: 999px)
+  .BurgerButton
+    margin-right: 0

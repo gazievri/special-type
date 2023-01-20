@@ -1,0 +1,58 @@
+@import "../../styles/@mixins.sass"
+
+.response
+  position: fixed
+  width: 100vw
+  height: 100vh
+  background: rgba(111, 111, 111, 0.8)
+  z-index: 10000
+  display: none
+
+.response__status_opened
+  display: flex
+
+.response__container
+  margin: 0 auto 0
+  padding: 98px 0 98px
+  align-self: center
+  max-width: 996px
+  width: 100%
+  max-height: 753px
+  height: 753px
+  background: #F8F8F8
+  border: 1px solid #FF3744
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1)
+  border-radius: 30px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+
+.response__img-container
+  width: 408px
+  height: 320px
+
+.response__title
+  @include heading-h3
+  line-height: 100%
+
+.response__subtitle
+  @include textBold-20
+
+.response__text-block
+  display: flex
+  flex-direction: column
+  gap: 24px
+  align-items: center
+
+.response__btn
+  background: rgba(255, 55, 68, 1)
+  border-radius: 30px
+  border: none
+  color: rgba(255, 255, 255, 1)
+  height: 41px
+  align-items: center
+  font-size: 16px
+  font-style: normal
+  cursor: pointer
+  width: 281px

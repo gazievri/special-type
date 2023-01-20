@@ -1,0 +1,40 @@
+@import "../../styles/@global.sass"
+@import "../../styles/@mixins.sass"
+
+.friendsList
+    display: flex
+    flex-wrap: wrap
+    max-width: 996px
+    justify-content: space-between
+    margin: 0 auto
+    gap: 0 20px
+
+.friendsList__title
+    @include heading-h1
+    color: rgba(243, 66, 71, 1)
+    text-align: center
+    margin: 74px auto 0
+
+.friendsList-card
+    max-width: 383px
+    list-style: none
+    overflow: hidden
+    width: 100%
+
+.friendsList-card__img
+    max-width: 383px
+
+.friendsList-card__title
+    padding: 40px 0 24px 0
+    @include heading-h3
+    color: rgba(243, 66, 71, 1)
+    text-overflow: ellipsis
+
+.friendsList-card__text
+    padding-bottom: 88px
+    @include textRegular-20
+
+
+@media screen and (max-width: 882px)
+    .friendsList
+        justify-content: center

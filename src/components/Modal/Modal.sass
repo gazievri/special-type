@@ -1,0 +1,44 @@
+.modal
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  width: 100vw
+  min-height: 100%
+  background: rgba(246, 246, 246, 0.9)
+  z-index: 100
+  overflow: hidden
+
+.modal_status_opened
+  display: flex
+  position: fixed
+  overflow-y: hidden
+  overflow-x: hidden
+
+.modal__container
+  margin: 90px auto 0
+  display: flex
+  flex-direction: column
+  position: relative
+  height: fit-content
+
+.modal__close
+  position: absolute
+  top: 0
+  right: 0
+  background-image: url('../../assets/images/close-icon.svg')
+  background-size: 27px 27px
+  background-position: center
+  background-color: transparent
+  border: none
+  width: 27px
+  height: 27px
+  transition: 0.3s
+
+.modal__close:hover
+  cursor: pointer
+  opacity: 0.6
+
+@media screen and (max-width: 600px)
+  .modal__container
+    margin: 50px auto 0
